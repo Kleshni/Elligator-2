@@ -8,7 +8,7 @@ It depends on the [Elliptic](https://github.com/indutny/elliptic/) library.
 `Elligator2Curve25519(curve)`
 -----------------------------
 
-Constructor of a coder. Requires an instance of a curve, which can be obthained with the following code:
+Constructor of a coder. Requires an instance of the curve, which can be obtained with the following code:
 
 ```
 var ECC = new ellipticjs.ec("curve25519");
