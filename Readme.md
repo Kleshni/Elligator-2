@@ -1,7 +1,7 @@
 Elligator 2
 ===========
 
-Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](http://cr.yp.to/ecdh.html).
+Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
 
 See the [documentation](Documentation.md).
 

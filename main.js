@@ -1,3 +1,5 @@
+"use strict";
+
 var Elligator2Curve25519 = function (curve) {
 	var A = curve.a;
 	var AA = A.redMul(A);

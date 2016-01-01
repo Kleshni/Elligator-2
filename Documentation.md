@@ -1,7 +1,7 @@
 Elligator 2
 ===========
 
-Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](http://cr.yp.to/ecdh.html).
+Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
 
 It depends on the [Elliptic](https://github.com/indutny/elliptic/) library.
 
@@ -11,8 +11,8 @@ It depends on the [Elliptic](https://github.com/indutny/elliptic/) library.
 Constructor of a coder. Requires an instance of the curve, which can be obtained with the following code:
 
 ```
-var ECC = new ellipticjs.ec("curve25519");
-var curve = ECC.curve;
+var EC = new ellipticjs.ec("curve25519");
+var curve = EC.curve;
 ```
 
 ### `encode(point, alternative)`
