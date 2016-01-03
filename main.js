@@ -9,7 +9,7 @@ var Elligator2Curve25519 = function (curve) {
 	var p12 = curve.p.subn(1).divn(2);
 
 	var encode = function (point, alternative) {
-		var x = point.getX().toRed(curve.red);
+		var x = point.x.redMul(point.z.redInvm());
 		var xA = x.redAdd(A);
 		var muxA = mu.redMul(xA);
 
