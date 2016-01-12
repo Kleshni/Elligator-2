@@ -23,7 +23,7 @@ Encodes the point.
 
 Returns the encoded point as a `Uint8Array` of 32 bytes or `null` if it can't be encoded. Note, that the returned representative is a 254-bits value, not 256.
 
-The algorithm can return two different values for a single x coordinate. Which one to return is determined by y coordinate. Sinse Curve25519 doesn't use y due to optimizations, you should specify a Boolean value as the second argument of the function. It should be unpredictable, because it's recoverable from the representative.
+The algorithm can return two different values for a single x coordinate if it's not 0. Which one to return is determined by y coordinate. Sinse Curve25519 doesn't use y due to optimizations, you should specify a Boolean value as the second argument of the function. It should be unpredictable, because it's recoverable from the representative.
 
 ### `decode(representative)`
 

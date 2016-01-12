@@ -17,6 +17,10 @@ var Elligator2Curve25519 = function (curve) {
 			return null;
 		}
 
+		if (x.cmpn(0)) {
+			alternative = false;
+		}
+
 		var r = (alternative ? xA.redMul(mu.redMul(x).redInvm()) : x.redMul(muxA.redInvm())).redSqrt();
 
 		if (r.cmp(p12) === 1) {
