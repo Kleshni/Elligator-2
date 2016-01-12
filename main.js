@@ -13,7 +13,7 @@ var Elligator2Curve25519 = function (curve) {
 		var xA = x.redAdd(A);
 		var muxA = mu.redMul(xA);
 
-		if (x.cmp(mA) === 0 || x.redMul(muxA).redPow(p12).cmpn(1) === 1) {
+		if (x.redMul(muxA).redPow(p12).cmpn(1) === 1) {
 			return null;
 		}
 
