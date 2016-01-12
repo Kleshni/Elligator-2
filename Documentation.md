@@ -3,6 +3,8 @@ Elligator 2
 
 Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
 
+The u value and the square root function are taken from the section 5.5 of the Elligator specification.
+
 It depends on the [Elliptic](https://github.com/indutny/elliptic/) library.
 
 `Elligator2Curve25519(curve)`
@@ -27,4 +29,4 @@ The algorithm can return two different values for a single x coordinate. Which o
 
 Decodes the representative.
 
-Returns an array with the point and the second argument of the corresponding call to the `encode` function. It's also able to return `null`, but this is very unlikely.
+Returns an array with the point and the second argument of the corresponding call to the `encode` function. It's also able to return `null` if the representative is invalid (there are only 10 invalid representatives).

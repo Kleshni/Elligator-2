@@ -13,7 +13,7 @@ var Elligator2Curve25519 = function (curve) {
 		var xA = x.redAdd(A);
 		var muxA = mu.redMul(xA);
 
-		if (!x.cmp(mA) || x.redMul(muxA).redPow(p12).cmpn(1) === 1) {
+		if (x.cmp(mA) === 0 || x.redMul(muxA).redPow(p12).cmpn(1) === 1) {
 			return null;
 		}
 
@@ -34,12 +34,12 @@ var Elligator2Curve25519 = function (curve) {
 
 	var decode = function (representative) {
 		var r = new curve.zero.constructor(representative).toRed(curve.red);
-		var rr = r.redMul(r);
-		var urr1 = curve.one.redAdd(u.redMul(rr));
 
-		if (!urr1.cmpn(0) || !AA.redMul(u).redMul(rr).cmp(urr1.redMul(urr1))) {
+		if (r.cmp(p12) !== -1) {
 			return null;
 		}
+
+		var urr1 = curve.one.redAdd(u.redMul(r.redMul(r)));
 
 		var v = mA.redMul(urr1.redInvm());
 		var vv = v.redMul(v);
