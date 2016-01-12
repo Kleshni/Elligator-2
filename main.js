@@ -17,7 +17,7 @@ var Elligator2Curve25519 = function (curve) {
 			return null;
 		}
 
-		if (x.cmpn(0)) {
+		if (x.cmpn(0) === 0) {
 			alternative = false;
 		}
 
