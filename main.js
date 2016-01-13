@@ -2,7 +2,6 @@
 
 var Elligator2Curve25519 = function (curve) {
 	var A = curve.a;
-	var AA = A.redMul(A);
 	var mA = A.redNeg();
 	var u = curve.two;
 	var mu = u.redNeg();
@@ -48,10 +47,10 @@ var Elligator2Curve25519 = function (curve) {
 		var v = mA.redMul(urr1.redInvm());
 		var vv = v.redMul(v);
 		var e = vv.redMul(v).redAdd(A.redMul(vv)).redAdd(v).redPow(p12);
-		var x = e.cmpn(1) ? v.redNeg().redSub(A) : v;
+		var x = e.cmpn(1) === 0 ? v : v.redNeg().redSub(A);
 
 		var point = curve.point(x, curve.one);
-		var alternative = e.cmpn(1) == 0;
+		var alternative = e.cmpn(1) === 0;
 
 		return [point, alternative];
 	};
