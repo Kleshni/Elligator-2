@@ -1,9 +1,12 @@
 Elligator 2
 ===========
 
-Javascript implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
+C and Javascript implementations of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
 
-See the [documentation](Documentation.md).
+Build
+-----
+
+To build the C library run `make` in its directory.
 
 Links
 -----
