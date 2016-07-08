@@ -1,12 +1,29 @@
 Elligator 2
 ===========
 
-C and Javascript implementations of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for [Curve25519](https://cr.yp.to/ecdh.html).
+C implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for the [Curve25519](https://cr.yp.to/ecdh.html) elliptic curve. The library also provides a function for point conversion from Ed25519 to Curve25519.
 
-Build
+Requires the [GMP](https://gmplib.org/) library. [CMake](https://cmake.org/) is used as a build system, [Check](https://libcheck.github.io/check/) is needed for tests and [Doxygen](https://www.stack.nl/~dimitri/doxygen/) for documentation generation.
+
+Binaries
+--------
+
+Build the target `library`. On Linux: run `cmake .` to generate a makefile, and then `make library`.
+
+Tests
 -----
 
-To build the C library run `make` in its directory.
+Make the target `check`.
+
+Documentation
+-------------
+
+Read in the [header](elligator-2-curve25519.h) file or make the target `documentation` to generate HTML.
+
+Install
+-------
+
+Execute the target `install/strip`.
 
 Links
 -----
@@ -15,4 +32,4 @@ Links
 * [Git repository](https://github.com/Kleshni/Elligator-2.git).
 * [Issue tracker](https://github.com/Kleshni/Elligator-2/issues).
 * Bitmessage: BM-FHMGLusCyAEjonpwAYdxzfcyBszP.
-* Mail: [biryuzovye.kleshni@yandex.ru](mailto:biryuzovye.kleshni@yandex.ru).
+* Mail: [kleshni@protonmail.ch](mailto:kleshni@protonmail.ch).

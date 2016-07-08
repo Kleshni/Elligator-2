@@ -1,0 +1,4 @@
+{
+	global: Elligator_2_Curve25519_*;
+	local: *;
+};
