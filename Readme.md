@@ -1,7 +1,7 @@
 Elligator 2
 ===========
 
-C implementation of the [Elligator 2](http://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for the [Curve25519](https://cr.yp.to/ecdh.html) elliptic curve. The library also provides a function for point conversion from Ed25519 to Curve25519.
+C implementation of the [Elligator 2](https://elligator.cr.yp.to/elligator-20130828.pdf) algorithm for the [Curve25519](https://cr.yp.to/ecdh.html) elliptic curve. The library also provides a function for point conversion from Ed25519 to Curve25519.
 
 Requires the [GMP](https://gmplib.org/) library. [CMake](https://cmake.org/) is used as a build system, [Check](https://libcheck.github.io/check/) is needed for tests and [Doxygen](https://www.stack.nl/~dimitri/doxygen/) for documentation generation.
 
@@ -31,5 +31,5 @@ Links
 * [Source code](https://github.com/Kleshni/Elligator-2/archive/master.zip).
 * [Git repository](https://github.com/Kleshni/Elligator-2.git).
 * [Issue tracker](https://github.com/Kleshni/Elligator-2/issues).
-* Bitmessage: BM-FHMGLusCyAEjonpwAYdxzfcyBszP.
+* Bitmessage: BM-2cT5WWccBgLsHTw5ADLcodTz4dbqdtrwrQ.
 * Mail: [kleshni@protonmail.ch](mailto:kleshni@protonmail.ch).
