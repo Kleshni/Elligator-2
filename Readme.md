@@ -33,3 +33,5 @@ Links
 * [Issue tracker](https://github.com/Kleshni/Elligator-2/issues).
 * Bitmessage: BM-2cT5WWccBgLsHTw5ADLcodTz4dbqdtrwrQ.
 * Mail: [kleshni@protonmail.ch](mailto:kleshni@protonmail.ch).
+
+Licence: CC0 or Public Domain.
