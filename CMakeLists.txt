@@ -19,7 +19,7 @@ target_link_libraries(library gmp)
 
 add_executable(tests tests.c test-vectors.c main.c)
 
-target_link_libraries(tests gmp -lcheck)
+target_link_libraries(tests gmp -lcheck m rt pthread subunit)
 
 target_compile_definitions(tests PRIVATE WITH_TESTS)
 
